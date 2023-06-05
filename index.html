@@ -7,12 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jaime Marsh || Front end Developer</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <script defer src="https://kit.fontawesome.com/c9f5e0f6b9.js" crossorigin="anonymous"></script>
-    <script defer src="js/app.js"></script>
+    <script defer src="assets/js/app.js"></script>
 </head>
 
 <body>
+    <!-- fixed navbar -->
     <nav class="navbar is-fixed-top is-info" role="navigation">
         <div class="navbar-brand">
             <a class="navbar-item" href="#top">
@@ -24,7 +25,7 @@
                 <a class="navbar-item" href="#aboutMe">About Me</a>
                 <a class="navbar-item" href="#recentWork">Recent Work</a>
                 <a class="navbar-item" href="#myToolBox">My Tool Box</a>
-                <a class="navbar-item has-text-black"
+                <a class="navbar-item"
                     href="https://docs.google.com/document/d/1VgjNo0e3yqMJnEQEkx-6ksQOKaP4iOxmdjWmhKwiR-M/export?format=pdf"><i
                         class="fa-solid fa-file-arrow-down m-1"></i>Resume</a>
             </div>
@@ -35,21 +36,22 @@
                 class="button is-info has-text-white is-size-4 is-size-6-mobile is-focused fixedButton has-text-white">Contact
                 Me <i class="fa-regular fa-comment m-2"></i></button></a>
     </div>
-
+    <!-- hero  -->
     <section class="hero is-fullheight is-info" id="top">
         <div class="hero-body">
             <div>
-                <h1 class="title is-size-1 hide imJaime white">I'm Jaime, a Front End Web Developer</h1>
-                <p class="subtitle hide imJaime white">Lets see what we can create together</p>
+                <h1 class="title is-size-1 hide imJaime has-text-white">I'm Jaime, a Front End Web Developer</h1>
+                <p class="subtitle hide imJaime has-text-white">Lets see what we can create together</p>
             </div>
         </div>
     </section>
-    <!-- image -->
+    <!-- image spot for later -->
+    <!-- About Me Section -->
     <section class="section is-medium" id="aboutMe">
         <h1 class="title has-text-centered is-size-1 is-size-3-mobile hide">About me</h1>
         <section class="content is-size-3 is-size-4-mobile has-text-justified has-text-left-mobile">
             <p class="hide">
-                My name is Jaime Marsh and I am brand new in the web developing world. I started out wanting to be a
+                My name is Jaime Marsh, and I am new to the web developing world. I started out wanting to be a
                 Physical Therapist, but then Covid 19 happened. I've changed a lot, but I still want to help people.
                 That's why I'm here to help you and your business. To create, fix up, or be a part of a longer project
                 that will help you succeed.
@@ -68,7 +70,7 @@
             </p>
         </section>
     </section>
-
+    <!-- Recent Work Section -->
     <section class='section is-medium' id="recentWork">
         <h1 class="title has-text-centered is-size-1 hide">Recent Work</h1>
         <div class="tile is-ancestor">
@@ -87,7 +89,7 @@
                         <article class="tile is-child notification hide is-primary recentWork">
                             <p class="title"><a href="https://pocket-plant.herokuapp.com/login">Pocket Plant</a></p>
                             <figure class="image is-3by2">
-                                <img src="images/pocketPlantSS.png">
+                                <img src="assets/images/pocketPlantSS.png">
                             </figure>
                         </article>
                     </div>
@@ -110,7 +112,7 @@
             </div>
         </div>
     </section>
-
+    <!-- Tool Box Section -->
     <section class="section y-6 is-large" id="myToolBox">
         <!-- first section -->
         <h1 class="title has-text-centered is-size-1">My Tool Box</h1>
@@ -180,12 +182,14 @@
             </div>
         </div>
     </section>
+    <!-- quote section -->
     <section class="section is-medium is-size-2 hide has-text-centered">
         <p>
             I am working for experience and to make connections with people like you.
             Lets get started.
         </p>
     </section>
+    <!-- contact me section -->
     <section class="section " id="contactMe">
         <footer class="footer">
             <div class="has-text-centered is-size-3 is-size-4-mobile">Interested in working with me? Contact Me!</div>
@@ -197,11 +201,15 @@
                     <span><a href="https://www.linkedin.com/in/jaime-marsh-843871262/">Linkedin</a></span>
                 </address>
                 <!-- <div>
-                 <span><img src="https://bulma.io/images/bulma-logo.png" width="112" height="28"></span>
+                    <div class="is-size-4">
+                        Made with
+                        <span> <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28"></span>
+                    </div>
                 </div> -->
             </div>
         </footer>
     </section>
 </body>
+<!-- https://jaimemarsh.github.io/jmPortfolio/ -->
 
 </html>

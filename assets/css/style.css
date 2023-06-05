@@ -7,42 +7,13 @@
     --white: white;
 }
 
-
-.darkest {
-    background-color: var(--darkest);
-    color: white;
-}
-
-.inbetween {
-    background-color: var(--inbetween);
-    color: white;
-}
-
-.blue {
-    background-color: var(--blue);
-    color: var(--white);
+* {
+    scroll-behavior: smooth;
 }
 
 .lightBlue {
     background-color: var(--lightBlue);
     color: var(--white)
-}
-
-.light {
-    background-color: var(--light)
-}
-
-.white {
-    color: white;
-}
-
-.container {
-    display: none;
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .fixedButton {
@@ -54,6 +25,7 @@
 
 }
 
+/* in relation to js */
 .hide {
     opacity: 0;
     filter: blue(5px);
@@ -67,7 +39,7 @@
     transform: translateX(0);
 }
 
-/* delay on first screen */
+/* transition delay on 'top' section*/
 .imJaime:nth-child(2) {
     transition-delay: 200ms;
 }
@@ -90,7 +62,7 @@
 }
 
 
-
+/* removes annimation if unwanted */
 @media(prefers-reduced-motion) {
     .hidden {
         transition: none;

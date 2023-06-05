@@ -1,4 +1,4 @@
-
+//annimation transition for all objects 'hide'
 const observer = new IntersectionObserver((enteries) => {
     enteries.forEach((entry) => {
         console.log(entry)
