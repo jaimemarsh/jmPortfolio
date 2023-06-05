@@ -1,0 +1,82 @@
+:root {
+    --darkest: #03045E;
+    --inbetween: #0096C7;
+    --blue: #0077B6;
+    --lightBlue: #70cede;
+    --light: #CAF0F8;
+    --white: white;
+}
+
+
+.darkest {
+    background-color: var(--darkest);
+    color: white;
+}
+
+.inbetween {
+    background-color: var(--inbetween);
+    color: white;
+}
+
+.blue {
+    background-color: var(--blue);
+    color: var(--white);
+}
+
+.lightBlue {
+    background-color: var(--lightBlue);
+    color: var(--white)
+}
+
+.light {
+    background-color: var(--light)
+}
+
+.white {
+    color: white;
+}
+
+/* a:hover {
+    color: rgb(33, 130, 226);
+} */
+
+.hide {
+    opacity: 0;
+    filter: blue(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+.recentWork:nth-child(2) {
+    transition-delay: 200ms;
+}
+
+.recentWork:nth-child(3) {
+    transition-delay: 400ms;
+}
+
+.recentWork:nth-child(4) {
+    transition-delay: 600ms;
+}
+
+.recentWork:nth-child(5) {
+    transition-delay: 800ms;
+}
+
+.imJaime:nth-child(2) {
+    transition-delay: 200ms;
+}
+
+
+
+@media(prefers-reduced-motion) {
+    .hidden {
+        transition: none;
+    }
+}
