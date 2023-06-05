@@ -8,41 +8,50 @@
     <title>Jaime Marsh || Front end Developer</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <script defer src="https://kit.fontawesome.com/c9f5e0f6b9.js" crossorigin="anonymous"></script>
     <script defer src="js/app.js"></script>
 </head>
 
 <body>
-    <!-- <nav class="navbar is-info">
-        <div class="navbar-menu is-active">
-            <div class="buttons">
-                <a class="button is-light">
-                    <strong>Home</strong>
-                </a>
-            </div>
+    <nav class="navbar is-fixed-top is-info" role="navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="#top">
+                <i class="fa-solid fa-laptop-code is-size-1 p-3"></i>
+            </a>
+
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
         </div>
-        <div class="navbar-end">
-            <div class="navbar-item">
-                <div class="buttons">
-                    <a class="button is-light">
-                        <strong>About me</strong>
-                    </a>
-                    <a class="button is-link">
-                        Contact me
-                    </a>
-                </div>
+        <div class="navbar-menu">
+            <div class="navbar-start is-size-4 m-4">
+                <a class="navbar-item" href="#aboutMe">About Me</a>
+                <a class="navbar-item" href="#recentWork">Recent Work</a>
+                <a class="navbar-item" href="#myToolBox">My Tool Box</a>
+                <a class="navbar-item has-text-black"
+                    href="https://docs.google.com/document/d/1VgjNo0e3yqMJnEQEkx-6ksQOKaP4iOxmdjWmhKwiR-M/export?format=pdf"><i
+                        class="fa-solid fa-file-arrow-down m-1"></i>Resume</a>
             </div>
-        </div>
-    </nav> -->
-    <section class="hero is-fullheight is-info">
+    </nav>
+    <!-- contact button -->
+    <div>
+        <a href="#contactMe"><button
+                class="button is-info has-text-white is-size-4 is-size-6-mobile is-focused fixedButton has-text-white">Contact
+                Me <i class="fa-regular fa-comment m-2"></i></button></a>
+    </div>
+
+    <section class="hero is-fullheight is-info" id="top">
         <div class="hero-body">
-            <div class="">
-                <p class="title is-size-1 hide imJaime white">I'm Jaime, a Front End Web Developer</p>
+            <div>
+                <h1 class="title is-size-1 hide imJaime white">I'm Jaime, a Front End Web Developer</h1>
                 <p class="subtitle hide imJaime white">Lets see what we can create together</p>
             </div>
         </div>
     </section>
     <!-- image -->
-    <section class="section is-medium">
+    <section class="section is-medium" id="aboutMe">
         <h1 class="title has-text-centered is-size-1 is-size-3-mobile hide">About me</h1>
         <section class="content is-size-3 is-size-4-mobile has-text-justified has-text-left-mobile">
             <p class="hide">
@@ -66,7 +75,7 @@
         </section>
     </section>
 
-    <section class='section is-medium'>
+    <section class='section is-medium' id="recentWork">
         <h1 class="title has-text-centered is-size-1 hide">Recent Work</h1>
         <div class="tile is-ancestor">
             <div class="tile is-vertical is-8">
@@ -108,7 +117,7 @@
         </div>
     </section>
 
-    <section class="section y-6 is-large">
+    <section class="section y-6 is-large" id="myToolBox">
         <!-- first section -->
         <h1 class="title has-text-centered is-size-1">My Tool Box</h1>
         <div class="tile is-ancestor">
@@ -183,7 +192,7 @@
             Lets get started.
         </p>
     </section>
-    <section class="section">
+    <section class="section " id="contactMe">
         <footer class="footer">
             <div class="has-text-centered is-size-3 is-size-4-mobile">Interested in working with me? Contact Me!</div>
             <div class="has-text-centered">
@@ -193,6 +202,9 @@
                     <span><a href="https://github.com/jaimemarsh">GitHub</a></span>
                     <span><a href="https://www.linkedin.com/in/jaime-marsh-843871262/">Linkedin</a></span>
                 </address>
+                <!-- <div>
+                 <span><img src="https://bulma.io/images/bulma-logo.png" width="112" height="28"></span>
+                </div> -->
             </div>
         </footer>
     </section>

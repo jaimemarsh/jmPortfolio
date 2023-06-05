@@ -36,9 +36,23 @@
     color: white;
 }
 
-/* a:hover {
-    color: rgb(33, 130, 226);
-} */
+.container {
+    display: none;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fixedButton {
+    /* sticky */
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+
+}
 
 .hide {
     opacity: 0;
@@ -52,6 +66,7 @@
     filter: blur(0);
     transform: translateX(0);
 }
+
 /* delay on first screen */
 .imJaime:nth-child(2) {
     transition-delay: 200ms;
