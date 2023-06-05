@@ -52,7 +52,12 @@
     filter: blur(0);
     transform: translateX(0);
 }
+/* delay on first screen */
+.imJaime:nth-child(2) {
+    transition-delay: 200ms;
+}
 
+/* transition delay for 'recent work' section */
 .recentWork:nth-child(2) {
     transition-delay: 200ms;
 }
@@ -67,10 +72,6 @@
 
 .recentWork:nth-child(5) {
     transition-delay: 800ms;
-}
-
-.imJaime:nth-child(2) {
-    transition-delay: 200ms;
 }
 
 
