@@ -11,6 +11,19 @@
     scroll-behavior: smooth;
 }
 
+
+.abrilFont {
+    font-family: 'Abril Fatface', sans-serif;
+}
+
+.imJaime {
+    font-size: 200px;
+}
+
+.firstQuote {
+    font-size: 70px;
+}
+
 .lightBlue {
     background-color: var(--lightBlue);
     color: var(--white)

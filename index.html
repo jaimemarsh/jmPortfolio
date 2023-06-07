@@ -8,20 +8,26 @@
     <title>Jaime Marsh || Front end Developer</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
     <script defer src="https://kit.fontawesome.com/c9f5e0f6b9.js" crossorigin="anonymous"></script>
     <script defer src="assets/js/app.js"></script>
 </head>
 
 <body>
     <!-- fixed navbar -->
-    <nav class="navbar is-fixed-top is-info" role="navigation">
+    <nav class="navbar is-fixed-top is-info abrilFont" role="navigation">
         <div class="navbar-brand">
             <a class="navbar-item" href="#top">
                 <i class="fa-solid fa-laptop-code is-size-1 p-3"></i>
+                <p class="is-size-3">Jaime Marsh</p>
             </a>
         </div>
         <div class="navbar-menu">
-            <div class="navbar-start is-size-4 m-4">
+            <div class="navbar-start">
+            </div>
+            <div class="navbar-end is-size-4 m-4">
                 <a class="navbar-item" href="#aboutMe">About Me</a>
                 <a class="navbar-item" href="#recentWork">Recent Work</a>
                 <a class="navbar-item" href="#myToolBox">My Tool Box</a>
@@ -37,160 +43,178 @@
                 Me <i class="fa-regular fa-comment m-2"></i></button></a>
     </div>
     <!-- hero  -->
-    <section class="hero is-fullheight is-info" id="top">
-        <div class="hero-body">
-            <div>
-                <h1 class="title is-size-1 hide imJaime has-text-white">I'm Jaime, a Front End Web Developer</h1>
-                <p class="subtitle hide imJaime has-text-white">Lets see what we can create together</p>
+    <section class="section is-large has-background-info is-fullheight is-info" id="top">
+        <div>
+            <div class="has-text-centered has-text-white abrilFont">
+                <h1 class="imJaime"><strong>JAIME MARSH</strong></h1>
+                <h1 class='is-size-1'> A Front End Web Developer</h1>
             </div>
         </div>
     </section>
     <!-- image spot for later -->
-    <!-- About Me Section -->
-    <section class="section is-medium" id="aboutMe">
-        <h1 class="title has-text-centered is-size-1 is-size-3-mobile hide">About me</h1>
-        <section class="content is-size-3 is-size-4-mobile has-text-justified has-text-left-mobile">
-            <p class="hide">
-                Hi! My name is Jaime Marsh. I started out wanting to be a Physical Therapist, but then Covid 19 happened.
-                I've changed a lot, but I still want to help people.
-                That's why I'm here to help you and your business. To create, fix up, or be a part of a longer project
-                that will help you succeed.
-            </p>
-            <p class="hide">For your website I don't have a stash of layouts to use, but want to talk with you about
-                your goals,
-                needs,
-                and features <em>you want</em>. Your business isn't like everyone else's, and your website shouldn't be
-                either.
-                Having a well organized website is hard, let me help. </p>
-            <p class="hide">I focus mainly on the design and interaction of a website, while a backend developer would
-                work more with
-                databases, security, and other server-side functions. Evaluate what you need. Feel free to contact me if
-                you
-                have questions.
-            </p>
-        </section>
+
+
+    <section class="section">
+        <p class="section is-medium has-text-centered abrilFont firstQuote">Lets see what we can create
+            together</p>
     </section>
-    <!-- Recent Work Section -->
-    <section class='section is-medium' id="recentWork">
-        <h1 class="title has-text-centered is-size-1 hide">Recent Work</h1>
-        <div class="tile is-ancestor">
-            <div class="tile is-vertical is-8">
-                <div class="tile">
-                    <div class="tile is-parent is-vertical">
-                        <article class="tile is-child notification hide recentWork lightBlue">
-                            <p class="title"><a href="https://jaimemarsh.github.io/javascriptQuiz/">JavaScript Quiz</a>
-                            </p>
-                        </article>
-                        <article class="tile is-child notification is-primary hide recentWork">
-                            <p class="title"><a href="https://notesapplication.herokuapp.com/">Note Taker</a></p>
-                        </article>
+
+    <section class="container is-max-widescreen">
+        <!-- About Me Section -->
+        <section class="section is-small has-text-centered " id="aboutMe">
+            <h1 class="title is-size-1 is-size-3-mobile hide abrilFont">About me</h1>
+            <section
+                class="content is-size-4 is-size-4-mobile has-text-justified has-text-left-mobile is-family-primary">
+                <p class="hide">
+                    Hi! My name is Jaime Marsh. I started out wanting to be a Physical Therapist, but then Covid 19
+                    happened.
+                    I've changed a lot, but I still want to help people.
+                    That's why I'm here to help you and your business. To create, fix up, or be a part of a longer
+                    project
+                    that will help you succeed.
+                </p>
+                <p class="hide">For your website I don't have a stash of layouts to use, but want to talk with you about
+                    your goals,
+                    needs,
+                    and features <em>you want</em>. Your business isn't like everyone else's, and your website shouldn't
+                    be
+                    either.
+                    Having a well organized website is hard, let me help. </p>
+                <p class="hide">I focus mainly on the design and interaction of a website, while a backend developer
+                    would
+                    work more with
+                    databases, security, and other server-side functions. Evaluate what you need. Feel free to contact
+                    me if
+                    you
+                    have questions.
+                </p>
+            </section>
+        </section>
+        <!-- Recent Work Section -->
+        <section class='section is-large abrilFont' id="recentWork">
+            <h1 class="title has-text-centered is-size-1 hide abrilFont">Recent Work</h1>
+            <div class="tile is-ancestor">
+                <div class="tile is-vertical is-8">
+                    <div class="tile">
+                        <div class="tile is-parent is-vertical">
+                            <article class="tile is-child notification hide recentWork lightBlue">
+                                <p class="title"><a href="https://jaimemarsh.github.io/javascriptQuiz/">JavaScript
+                                        Quiz</a>
+                                </p>
+                            </article>
+                            <article class="tile is-child notification is-primary hide recentWork">
+                                <p class="title"><a href="https://notesapplication.herokuapp.com/">Note Taker</a></p>
+                            </article>
+                        </div>
+                        <div class="tile is-parent">
+                            <article class="tile is-child notification hide is-primary recentWork">
+                                <p class="title"><a href="https://pocket-plant.herokuapp.com/login">Pocket Plant</a></p>
+                                <figure class="image is-3by2">
+                                    <img src="assets/images/pocketPlantSS.png">
+                                </figure>
+                            </article>
+                        </div>
                     </div>
                     <div class="tile is-parent">
-                        <article class="tile is-child notification hide is-primary recentWork">
-                            <p class="title"><a href="https://pocket-plant.herokuapp.com/login">Pocket Plant</a></p>
-                            <figure class="image is-3by2">
-                                <img src="assets/images/pocketPlantSS.png">
-                            </figure>
+                        <article class="tile is-child notification is-info hide recentWork">
+                            <p class="title"><a href="https://jaimemarsh.github.io/weatherDashboard-/">Weather
+                                    Dashboard</a>
+                            </p>
                         </article>
                     </div>
                 </div>
                 <div class="tile is-parent">
-                    <article class="tile is-child notification is-info hide recentWork">
-                        <p class="title"><a href="https://jaimemarsh.github.io/weatherDashboard-/">Weather Dashboard</a>
-                        </p>
+                    <article class="tile is-child notification hide recentWork lightBlue">
+                        <div class="content">
+                            <p class="title"><a
+                                    href="https://gist.github.com/jaimemarsh/56499452d49696e1c00220c592032f72">Regular
+                                    Expression How To</a></p>
+                        </div>
                     </article>
                 </div>
             </div>
-            <div class="tile is-parent">
-                <article class="tile is-child notification hide recentWork lightBlue">
-                    <div class="content">
-                        <p class="title"><a
-                                href="https://gist.github.com/jaimemarsh/56499452d49696e1c00220c592032f72">Regular
-                                Expression How To</a></p>
+        </section>
+        <!-- Tool Box Section -->
+        <section class="section y-6 is-small abrilFont" id="myToolBox">
+            <!-- first section -->
+            <h1 class="title has-text-centered is-size-1">My Tool Box</h1>
+            <div class="tile is-ancestor">
+                <div class="tile is-ancestor">
+                    <div class="tile is-parent">
+                        <article class="tile is-child notification lightBlue css hide">
+                            <p class="title">CSS</p>
+                        </article>
                     </div>
-                </article>
+                    <div class="tile is-parent">
+                        <article class="tile is-child notification is-success  hide">
+                            <p class="title">HTML</p>
+                    </div>
+                    <div class="tile is-parent">
+                        <article class="tile is-child notification is-info  hide">
+                            <p class="title">JavaScript</p>
+                    </div>
+                </div>
             </div>
-        </div>
-    </section>
-    <!-- Tool Box Section -->
-    <section class="section y-6 is-large" id="myToolBox">
-        <!-- first section -->
-        <h1 class="title has-text-centered is-size-1">My Tool Box</h1>
-        <div class="tile is-ancestor">
+            <!-- second section -->
             <div class="tile is-ancestor">
                 <div class="tile is-parent">
-                    <article class="tile is-child notification lightBlue css hide">
-                        <p class="title">CSS</p>
+                    <article class="tile is-child notification lightBlue hide">
+                        <p class="title">Bulma</p>
+                    </article>
+                </div>
+                <div class="tile is-parent">
+                    <article class="tile is-child notification is-success hide">
+                        <p class="title">MongoDB</p>
+                </div>
+                <div class="tile is-parent">
+                    <article class="tile is-child notification is-info hide">
+                        <p class="title">Express.js</p>
+                </div>
+            </div>
+            <!-- third section -->
+            <div class="tile is-ancestor">
+                <div class="tile is-parent">
+                    <article class="tile is-child notification lightBlue hide">
+                        <p class="title">Font Awesome</p>
+                    </article>
+                </div>
+                <div class="tile is-parent">
+                    <article class="tile is-child notification is-success hide">
+                        <p class="title">Git/GitHub</p>
+                </div>
+                <div class="tile is-parent">
+                    <article class="tile is-child notification is-info hide">
+                        <p class="title">Node.js</p>
+                </div>
+            </div>
+            <!-- fourth section -->
+            <div class="tile is-ancestor">
+                <div class="tile is-parent">
+                    <article class="tile is-child notification lightBlue hide">
+                        <p class="title">Progressive Web Applications PWA's</p>
                     </article>
                 </div>
                 <div class="tile is-parent">
                     <article class="tile is-child notification is-success  hide">
-                        <p class="title">HTML</p>
+                        <p class="title">MySQL/NoSQL</p>
                 </div>
                 <div class="tile is-parent">
-                    <article class="tile is-child notification is-info  hide">
-                        <p class="title">JavaScript</p>
+                    <article class="tile is-child notification is-info hide">
+                        <p class="title">jQuery</p>
                 </div>
             </div>
-        </div>
-        <!-- second section -->
-        <div class="tile is-ancestor">
-            <div class="tile is-parent">
-                <article class="tile is-child notification lightBlue hide">
-                    <p class="title">Bulma</p>
-                </article>
-            </div>
-            <div class="tile is-parent">
-                <article class="tile is-child notification is-success hide">
-                    <p class="title">MongoDB</p>
-            </div>
-            <div class="tile is-parent">
-                <article class="tile is-child notification is-info hide">
-                    <p class="title">Express.js</p>
-            </div>
-        </div>
-        <!-- third section -->
-        <div class="tile is-ancestor">
-            <div class="tile is-parent">
-                <article class="tile is-child notification lightBlue hide">
-                    <p class="title">Font Awesome</p>
-                </article>
-            </div>
-            <div class="tile is-parent">
-                <article class="tile is-child notification is-success hide">
-                    <p class="title">Git/GitHub</p>
-            </div>
-            <div class="tile is-parent">
-                <article class="tile is-child notification is-info hide">
-                    <p class="title">Node.js</p>
-            </div>
-        </div>
-        <!-- fourth section -->
-        <div class="tile is-ancestor">
-            <div class="tile is-parent">
-                <article class="tile is-child notification lightBlue hide">
-                    <p class="title">Progressive Web Applications PWA's</p>
-                </article>
-            </div>
-            <div class="tile is-parent">
-                <article class="tile is-child notification is-success  hide">
-                    <p class="title">MySQL/NoSQL</p>
-            </div>
-            <div class="tile is-parent">
-                <article class="tile is-child notification is-info hide">
-                    <p class="title">jQuery</p>
-            </div>
-        </div>
-    </section>
-    <!-- quote section -->
-    <section class="section is-medium is-size-2 hide has-text-centered">
-        <p>
-            I am working for experience and to make connections with people like you.
-            Lets get started.
-        </p>
+        </section>
+        <!-- quote section -->
+        <section class="section is-medium is-size-2 hide has-text-centered abrilFont">
+            <p>
+                I am working for experience and to make connections with people like you.
+                Lets get started.
+            </p>
+        </section>
+
     </section>
     <!-- contact me section -->
-    <section class="section " id="contactMe">
+    <section class="section" id="contactMe">
         <footer class="footer">
             <div class="has-text-centered is-size-3 is-size-4-mobile">Interested in working with me? Contact Me!</div>
             <div class="has-text-centered">
