@@ -13,11 +13,18 @@
 
 
 .abrilFont {
-    font-family: 'Abril Fatface', sans-serif;
+    font-family: 'Londrina Shadow', cursive;
 }
 
+.solidFont {
+    font-family: 'Londrina Solid', cursive;
+}
+
+.defaultFont{
+    font-family: 'Quicksand', sans-serif;
+}
 .imJaime {
-    font-size: 200px;
+    font-size: 300px;
 }
 
 .firstQuote {
