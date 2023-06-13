@@ -20,9 +20,10 @@
     font-family: 'Londrina Solid', cursive;
 }
 
-.defaultFont{
+.defaultFont {
     font-family: 'Quicksand', sans-serif;
 }
+
 .imJaime {
     font-size: 300px;
 }
@@ -34,6 +35,10 @@
 .lightBlue {
     background-color: var(--lightBlue);
     color: var(--white)
+}
+
+.white {
+    color: var(--white);
 }
 
 .fixedButton {
