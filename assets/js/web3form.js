@@ -8,14 +8,26 @@ document.getElementById('contact-form').addEventListener('submit', function (eve
     const emailError = document.getElementById('email-error');
     const messageError = document.getElementById('message-error');
 
+    //pop up
+    // const openFormButton = document.getElementById('open-form-button');
+    // const closeFormButton = document.getElementById('close-form-button');
+    // const formOverlay = document.getElementById('form-overlay');
 
-    openFormButton.addEventListener('click', function () {
-        formOverlay.classList.add('is-active');
-    });
+    // openFormButton.addEventListener('click', function () {
+    //     formOverlay.classList.add('is-active');
+    // });
 
-    closeFormButton.addEventListener('click', function () {
-        formOverlay.classList.remove('is-active');
-    });
+    // closeFormButton.addEventListener('click', function () {
+    //     formOverlay.classList.remove('is-active');
+    // });
+
+    // openFormButton.addEventListener('click', function () {
+    //     formOverlay.classList.add('is-active');
+    // });
+
+    // closeFormButton.addEventListener('click', function () {
+    //     formOverlay.classList.remove('is-active');
+    // });
 
 
     // Reset previous error messages
