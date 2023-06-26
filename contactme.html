@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jaime Marsh || Front end Developer</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Londrina+Shadow&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Londrina+Shadow&family=Londrina+Solid&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Londrina+Shadow&family=Londrina+Solid&family=Quicksand&display=swap"
+        rel="stylesheet">
+    <script defer src="https://kit.fontawesome.com/c9f5e0f6b9.js" crossorigin="anonymous"></script>
+    <script defer src="assets/js/web3form.js"></script>
+    <script defer src="https://web3forms.com/client/script.js" async defer></script>
+</head>
+
+<body>
+    <nav class="navbar is-fixed-top is-info" role="navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="./index.html">
+                <i class="fa-solid fa-laptop-code is-size-1 p-3"></i>
+                <p class="is-size-3 is-size-6-mobile defaultFont"><strong>Jaime Marsh</strong></p>
+            </a>
+        </div>
+        <div class="navbar-menu">
+            <div class="navbar-start">
+            </div>
+            <div class="navbar-end is-size-4 m-4 defaultFont">
+                <a class="navbar-item"
+                    href="https://docs.google.com/document/d/1VgjNo0e3yqMJnEQEkx-6ksQOKaP4iOxmdjWmhKwiR-M/export?format=pdf"><i
+                        class="fa-solid fa-file-arrow-down m-1"></i><strong>Resume</strong></a>
+            </div>
+    </nav>
+
+
+
+    <section class="container is-max-widescreen">
+        <section class="section is-medium defaultFont">
+            <h1 class="title has-text-info">Lets Start the Conversation!</h1>
+            <form id="contact-form">
+                <input type="hidden" name="access_key" value="160599cd-bdc1-4c0e-8812-2140ece05961" />
+                <div class="field">
+                    <label class="label">Name:</label>
+                    <input name="name" id="name" class="input" type="text" required />
+                    <p id="name-error" class="error"></p>
+                </div>
+                <div class="field">
+                    <label class="label">Email:</label>
+                    <input name="email" id="email" class="input" type="email" required />
+                    <p id="email-error" class="error"></p>
+                </div>
+                <div class="field">
+                    <label class="label">Message:</label>
+                    <textarea name="message" id="message" class="textarea" rows="10" required></textarea>
+                    <p id="message-error" class="error"></p>
+                </div>
+                <button type="submit" class="button is-info">
+                    Submit
+                </button>
+            </form>
+        </section>
+    </section>
+</body>
+
+</html>
