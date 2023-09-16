@@ -51,7 +51,7 @@
 }
 
 /* in relation to js */
-.hide {
+/* .hide {
     opacity: 0;
     filter: blue(5px);
     transform: translateX(-100%);
@@ -62,7 +62,7 @@
     opacity: 1;
     filter: blur(0);
     transform: translateX(0);
-}
+} */
 
 /* transition delay on 'top' section*/
 .imJaime:nth-child(2) {
