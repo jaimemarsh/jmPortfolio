@@ -11,6 +11,13 @@
     scroll-behavior: smooth;
 }
 
+.zoom {
+    transition: transform 0.3s ease;
+}
+
+.zoom:hover {
+    transform: scale(1.1);
+}
 
 .superFont {
     font-family: 'Londrina Shadow', cursive;
