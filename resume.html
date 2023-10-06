@@ -19,53 +19,37 @@
         href="https://fonts.googleapis.com/css2?family=Londrina+Shadow&family=Londrina+Solid&family=Quicksand&display=swap"
         rel="stylesheet">
     <script defer src="https://kit.fontawesome.com/c9f5e0f6b9.js" crossorigin="anonymous"></script>
-    <script defer src="assets/js/web3form.js"></script>
-    <script defer src="https://web3forms.com/client/script.js" async defer></script>
+    <script defer src="assets/js/app.js"></script>
 </head>
 
 <body>
     <nav class="navbar is-fixed-top is-info" role="navigation">
         <div class="navbar-brand">
-            <a class="navbar-item" href="./index.html">
+            <a class="navbar-item" href="/index.html">
                 <i class="fa-solid fa-laptop-code is-size-1 p-3"></i>
                 <p class="is-size-3 is-size-6-mobile defaultFont"><strong>Jaime Marsh</strong></p>
             </a>
         </div>
-        <div class="navbar-menu">
+        <!-- <div class="navbar-menu">
             <div class="navbar-start">
             </div>
             <div class="navbar-end is-size-4 m-4 defaultFont">
+                <a class="navbar-item" href="#aboutMe"><strong>About Me</strong></a>
+                <a class="navbar-item" href="#recentWork"><strong>Recent Work</strong></a>
+                <a class="navbar-item" href="#myToolBox"><strong>My Tool Box</strong></a>
                 <a class="navbar-item" href="/resume.html"><strong>Resume</strong></a>
             </div>
+        </div> -->
     </nav>
-
-
-    <section class="container is-max-widescreen">
-        <section class="section is-medium defaultFont">
-            <h1 class="title has-text-info is-size-3-mobile has-text-center-mobile">Contact Me!</h1>
-            <form id="contact-form">
-                <input type="hidden" name="access_key" value="160599cd-bdc1-4c0e-8812-2140ece05961" />
-                <div class="field">
-                    <label class="label">Name:</label>
-                    <input name="name" id="name" class="input" type="text" required />
-                    <p id="name-error" class="error"></p>
-                </div>
-                <div class="field">
-                    <label class="label">Email:</label>
-                    <input name="email" id="email" class="input" type="email" required />
-                    <p id="email-error" class="error"></p>
-                </div>
-                <div class="field">
-                    <label class="label">Message:</label>
-                    <textarea name="message" id="message" class="textarea" rows="10" required></textarea>
-                    <p id="message-error" class="error"></p>
-                </div>
-                <button type="submit" class="button is-info">
-                    Submit
-                </button>
-            </form>
-        </section>
-    </section>
+    <div class="section is-medium m-6">
+        <h1 class="title has-text-centered superFont is-size-1">My Resume</h1>
+        <div class="title defaultFont">
+            <a href="/assets/JaimeMarsh_RESUME .pdf" download>
+                <span class="is-size-3 is-pulled-right">Download PDF</span>
+            </a>
+        </div>
+        <img src="./assets/images/JaimeMarsh_RESUME.jpg" alt="resume" />
+    </div>
 </body>
 
 </html>
