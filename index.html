@@ -24,7 +24,7 @@
 
 <body>
     <!-- fixed navbar -->
-    <nav class="navbar is-fixed-top is-info" role="navigation">
+    <nav class="navbar is-fixed-top" role="navigation">
         <div class="navbar-brand">
             <a class="navbar-item" href="#top">
                 <i class="fa-solid fa-laptop-code is-size-1 p-3"></i>
@@ -35,27 +35,40 @@
             <div class="navbar-start">
             </div>
             <div class="navbar-end is-size-4 m-4 defaultFont">
-                <a class="navbar-item" href="#aboutMe"><strong>About Me</strong></a>
-                <a class="navbar-item" href="#layouts"><strong>Layouts</strong></a>
+                <!-- <a class="navbar-item" href="#aboutMe"><strong>About Me</strong></a>
+                <a class="navbar-item" href="#layouts"><strong>Layouts</strong></a> -->
                 <!-- <a class="navbar-item" href="#myToolBox"><strong>My Tool Box</strong></a> -->
                 <!-- <a class="navbar-item" href="/resume.html"><strong>Resume</strong></a> -->
             </div>
     </nav>
+
     <!-- contact button -->
     <div>
         <a href="/contactme.html"><button
                 class="button is-info is-size-4 is-size-6-mobile is-focused fixedButton defaultFont"><strong>Contact
                     Me </strong><i class="fa-regular fa-comment m-2"></i></button></a>
     </div>
+
+
     <!-- hero  -->
-    <section class="section has-background-info is-fullheight is-info" id="top">
+    <section class="section background-image" id="top">
         <div>
-            <div class="section is-medium has-text-centered superFont">
-                <h1 class="imJaime is-size-1-mobile hide"><strong>JaimeMarsh.WEB</strong></h1>
-                <h1 class='is-size-1 is-size-4-mobile hide white'><strong>Lets make a website</strong>
+            <div class="section is-medium has-text-centered">
+                <h1 class="is-size-1-mobile hide">
+                    <strong>
+                        <span class="imJaime is-hidden-mobile superFont">JaimeMarsh</span>
+                        <span class="web has-text-info superFont">.WEB</span>
+                    </strong>
                 </h1>
+                <h1 class='is-size-1 is-size-3-mobile hide white solidFont'>
+                    <strong>Let's make a website</strong>
+                </h1>
+                <div class="has-text-centered">
+                    <address class="is-size-3 is-size-4-mobile defaultFont">
+                        <span><a href="mailto:jaimemarsh19@gmail.com"><u>Email Me</u></a></span>
+                    </address>
+                </div>
             </div>
-        </div>
     </section>
 
 
@@ -63,8 +76,8 @@
     <!-- image spot for later -->
     <section class="container is-max-widescreen">
         <!-- About Me Section -->
-        <section class="section is-medium has-text-centered " id="aboutMe">
-            <h1 class="title is-size-1 is-size-3-mobile hide superFont">About me</h1>
+        <section class="section is-small has-text-centered " id="aboutMe">
+            <h1 class="title is-size-1 is-size-3-mobile hide superFont">About <strong>.WEB</strong></h1>
             <section
                 class="content is-size-4 is-size-4-mobile has-text-justified has-text-left-mobile is-family-primary">
                 <p class="hide defaultFont">
@@ -172,7 +185,7 @@
 
             <!-- quote section -->
             <section class="section is-small is-size-2 hide has-text-centered superFont">
-                <p><strong>
+                <p class="is-size-3-mobile"><strong>
                         I offer a free 15-minute consultation! I’m excited to learn more about you and your
                         business. Together we can start building a website you’ll be proud of.
                     </strong></p>
@@ -192,12 +205,6 @@
                         not just “copy and paste,” I'm open to helping you find the right solution at a reasonable
                         price. Let’s set up a
                         free 15-minute consultation to discuss what works best for your business.
-                    </p>
-                    <p class="hide defaultFont">
-                        These websites are simple and designed to showcase your business—your location, contact info,
-                        and services—all in one easy-to-navigate place. While they don’t support online sales, they’ll
-                        give your business a professional online presence that helps customers find and connect with
-                        you.
                     </p>
                     <p class="hide defaultFont has-text-centered">
                         <Strong>Fill out this form if you're interested in working together!</Strong>

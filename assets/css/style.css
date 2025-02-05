@@ -32,12 +32,17 @@
 }
 
 .imJaime {
-    font-size: 225px;
+    font-size: 100px;
+}
+
+.web {
+    font-size: 155px;
 }
 
 .firstQuote {
     font-size: 70px;
 }
+
 
 .lightBlue {
     background-color: var(--lightBlue);
@@ -56,6 +61,23 @@
     z-index: 99;
 
 }
+
+.background-image {
+    background-image: url('../images/workingTogether.jpg');
+    /* background-image: url('../images/laptop.jpg'); */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /* Optional: Makes the image stay fixed on scroll */
+    min-height: 100vh;
+    /* Ensure the section takes up the full screen */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
 
 /* in relation to js */
 /* .hide {
