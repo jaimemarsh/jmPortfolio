@@ -1,14 +1,16 @@
 :root {
-    --darkest: #03045E;
-    --inbetween: #0096C7;
-    --blue: #0077B6;
-    --lightBlue: #70cede;
-    --light: #CAF0F8;
     --white: white;
 }
 
 * {
     scroll-behavior: smooth;
+}
+
+.navbar {
+    background-color: transparent;
+    box-shadow: none;
+    position: absolute;
+    width: 100%;
 }
 
 .zoom {
@@ -17,6 +19,10 @@
 
 .zoom:hover {
     transform: scale(1.1);
+}
+
+.fontSizeLarge {
+    font-size: 100px;
 }
 
 .superFont {
@@ -32,11 +38,11 @@
 }
 
 .imJaime {
-    font-size: 100px;
+    font-size: 50px;
 }
 
 .web {
-    font-size: 155px;
+    font-size: 50px;
 }
 
 .firstQuote {
@@ -63,7 +69,7 @@
 }
 
 .background-image {
-    background-image: url('../images/workingTogether.jpg');
+    background-image: url('../images/pinkLaptop.jpg');
     /* background-image: url('../images/laptop.jpg'); */
     background-size: cover;
     background-position: center;
