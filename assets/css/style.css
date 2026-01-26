@@ -11,6 +11,13 @@
     box-shadow: none;
     position: absolute;
     width: 100%;
+    font-size: 35px;
+}
+
+.navbar-item:hover,
+.navbar-item:focus {
+  background-color: transparent !important;
+  color: inherit;
 }
 
 body {
@@ -144,6 +151,7 @@ body {
 .recentWork:nth-child(5) {
     transition-delay: 800ms;
 }
+
 
 
 /* removes annimation if unwanted */
