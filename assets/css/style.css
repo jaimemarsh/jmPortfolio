@@ -13,6 +13,10 @@
     width: 100%;
 }
 
+body {
+    background-color: rgb(158, 189, 252);
+}
+
 .zoom {
     transition: transform 0.3s ease;
 }
@@ -22,7 +26,7 @@
 }
 
 .fontSizeLarge {
-    font-size: 100px;
+    font-size: 250px;
 }
 
 .superFont {
@@ -36,6 +40,25 @@
 .defaultFont {
     font-family: 'Quicksand', sans-serif;
 }
+
+.corinthia-regular {
+    font-family: "Corinthia", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.corinthia-bold {
+    font-family: "Corinthia", cursive;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.birthstone-regular {
+    font-family: "Birthstone", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
 
 .imJaime {
     font-size: 50px;
@@ -68,9 +91,10 @@
 
 }
 
+
 .background-image {
-    background-image: url('../images/pinkLaptop.jpg');
-    /* background-image: url('../images/laptop.jpg'); */
+    background-image: url('');
+    background-image: url('../images/sunset.jpeg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -83,7 +107,7 @@
     justify-content: center;
     text-align: center;
 }
-
+*/
 
 /* in relation to js */
 /* .hide {
