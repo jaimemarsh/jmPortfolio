@@ -17,8 +17,10 @@
 
 .navbar-item.white:hover,
 .navbar-item.white:focus {
-  background-color: inherit; /* the highlight color you want */
-  color: rgb(255, 127, 191); /* optional: text color change on hover */
+    background-color: inherit;
+    /* the highlight color you want */
+    color: rgb(255, 127, 191);
+    /* optional: text color change on hover */
 }
 
 
@@ -39,7 +41,7 @@ body {
     display: flex;
     gap: 24px;
     overflow-x: auto;
-    scroll-snap-type: x mandatory;
+    scroll-snap-type: x proximity;
     padding-bottom: 16px;
 }
 
@@ -52,10 +54,28 @@ body {
     scroll-snap-align: center;
 }
 
+.websiteImage {
+    width: 350px;
+    height: 720px;
+}
+
+.projectImage {
+    width: 350px;
+    height: 620px;
+}
+
 .featured-item img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.featured-scroll-opposite {
+    display: flex;
+    gap: 24px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding-bottom: 16px;
 }
 
 /* end */
@@ -90,6 +110,15 @@ body {
 .defaultFont {
     font-family: 'Quicksand', sans-serif;
 }
+
+.webFont {
+    font-family: "Reenie Beanie", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+/*  */
 
 .white {
     color: var(--white);
