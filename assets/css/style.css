@@ -14,9 +14,13 @@
     font-size: 35px;
 }
 
+.pink {
+    color: rgb(255, 127, 191);
+}
 
-.navbar-item.white:hover,
-.navbar-item.white:focus {
+
+.navbar-item.hovernav:hover,
+.navbar-item.hovernav:focus {
     background-color: inherit;
     /* the highlight color you want */
     color: rgb(255, 127, 191);
@@ -136,7 +140,7 @@ body {
 
 .background-image {
     background-image: url('');
-    background-image: url('../images/exampleImage.jpg');
+    background-image: url('../images/jaimeiwthCameraBW.JPG');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
