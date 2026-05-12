@@ -137,7 +137,7 @@ body {
 }
 
 
-.background-image {
+/* .background-image {
     background-image: url('');
     background-image: url('../images/jaimeiwthCameraBW.JPG');
     background-size: cover;
@@ -145,12 +145,45 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     /* Optional: Makes the image stay fixed on scroll */
+/* min-height: 100vh; */
+/* Ensure the section takes up the full screen */
+/* display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}  */
+
+.background-image {
+    background-image: url('../images/jaimeiwthCameraBW.JPG');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
     min-height: 100vh;
-    /* Ensure the section takes up the full screen */
+
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
+}
+
+/* Mobile optimization */
+@media screen and (max-width: 768px) {
+    .background-image {
+
+        /* Fixed backgrounds perform poorly on mobile */
+        background-attachment: scroll;
+
+        /* Keeps subject framed better on phones */
+        background-position: center top;
+
+        /* Prevents awkward cropping */
+        min-height: 100svh;
+
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
 }
 
 .image1 {
@@ -162,4 +195,3 @@ body {
 .footer {
     background-color: rgb(36, 36, 36);
 }
-
