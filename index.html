@@ -18,19 +18,19 @@
 
 <body>
     <!-- fixed navbar -->
-    <nav class="navbar" role="navigation">
-        <div class="navbar-menu is-flex is-align-items-center is-justify-content-space-between" style="width: 100%;">
+    <!-- <nav class="navbar" role="navigation">
+        <div class="navbar-menu is-flex is-align-items-center is-justify-content-space-between" style="width: 100%;"> -->
 
             <!-- Left side: Jaime.Web -->
-            <div class="navbar-item m-4 defaultFont webFont">
+            <!-- <div class="navbar-item m-4 defaultFont webFont">
                 <strong>
                     <span class="imJaime is-hidden-mobile white">JaimeMarsh</span>
                     <span class="web white corinthia-bold">.WEB</span>
                 </strong>
-            </div>
+            </div> -->
 
             <!-- Right side: Links -->
-            <div class="is-flex">
+            <!-- <div class="is-flex">
                 <a class="navbar-item hovernav" href="#aboutMe"><strong>About Me</strong></a>
                 <a class="navbar-item hovernav" href="#RecentWork"><strong>Recent Work</strong></a>
                 <a class="navbar-item hovernav" href="#Photography"><strong>Photography</strong></a>
@@ -38,20 +38,72 @@
             </div>
 
         </div>
+    </nav> -->
+
+    <!-- Mobile-friendly Bulma navbar -->
+    <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+
+            <!-- Logo / Name -->
+            <a class="navbar-item m-2 defaultFont webFont" href="#">
+                <strong>
+                    <span class="imJaime is-hidden-mobile white">JaimeMarsh</span>
+                    <span class="web white corinthia-bold">.WEB</span>
+                </strong>
+            </a>
+
+            <!-- Burger menu for mobile -->
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="mainNavbar">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <!-- Navbar menu -->
+        <div id="mainNavbar" class="navbar-menu">
+
+            <!-- Right side links -->
+            <div class="navbar-end">
+                <a class="navbar-item hovernav" href="#aboutMe">
+                    <strong>About Me</strong>
+                </a>
+
+                <a class="navbar-item hovernav" href="#RecentWork">
+                    <strong>Recent Work</strong>
+                </a>
+
+                <a class="navbar-item hovernav" href="#Photography">
+                    <strong>Photography</strong>
+                </a>
+
+                <a class="navbar-item hovernav" href="#Contact">
+                    <strong>Contact</strong>
+                </a>
+            </div>
+
+        </div>
     </nav>
 
+    <!-- Bulma burger toggle script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const burgers = Array.prototype.slice.call(
+                document.querySelectorAll('.navbar-burger'),
+                0
+            );
 
+            burgers.forEach(el => {
+                el.addEventListener('click', () => {
+                    const target = el.dataset.target;
+                    const menu = document.getElementById(target);
 
-
-
-    <!-- contact button -->
-    <!-- <div>
-        <a href="/contactme.html">
-            <button
-                class="button is-size-4 is-size-6-mobile is-focused fixedButton defaultFont is-danger is-outlined"><strong>Contact
-                    Me </strong><i class="fa-regular fa-comment m-2"></i></button>
-        </a>
-    </div> -->
+                    el.classList.toggle('is-active');
+                    menu.classList.toggle('is-active');
+                });
+            });
+        });
+    </script>
 
 
     <!-- hero  -->
@@ -192,21 +244,6 @@
         </div>
     </section>
 
-
-
-    <!-- <section class="section is-small is-size-2 hide has-text-centered">
-        <p class="hide defaultFont has-text-centered"> My Favorite Quote is from Meet the Robinsons
-            <br>
-            <Strong class="white ">Keep Moving Forward</Strong>
-        </p>
-    </section> -->
-
-    <!-- <section>
-        <h1 class="title has-text-centered mb-5 white is-size-1 is-size-3-mobile">
-            My Gallary
-        </h1>
-    </section> -->
-
     <!-- featured work Market Bar-->
     <section class="section" id="Photography">
         <div class="container is-max-widescreen">
@@ -333,40 +370,6 @@
         </div>
     </section>
 
-
-    <!-- featured work Integrity-->
-    <!-- <section class="section">
-        <div class="container is-max-widescreen">
-
-            <h2 class="title has-text-centered mb-5 white is-size-1 is-size-3-mobile">
-                Sports Photography
-            </h2>
-            <p class="has-text-centered mb-6 white">
-                Funfact about me: I coached Gymnastics for 10 years
-            </p>
-
-            <div class="featured-scroll">
-
-                <div class="featured-item">
-                    <img src="./assets/images/integGirlsTeam.JPG" alt="Featured Project 1">
-                </div>
-
-                <div class="featured-item">
-                    <img src="./assets/images/integBoysTeam.JPG" alt="Featured Project 2">
-                </div>
-
-                <div class="featured-item">
-                    <img src="./assets/images/integRecVault.JPG" alt="Featured Project 3">
-                </div>
-
-                <div class="featured-item">
-                    <img src="./assets/images/integTrampLayout.JPG" alt="Featured Project 4">
-                </div>
-
-            </div>
-        </div>
-    </section> -->
-
     <section class="container is-max-widescreen" id="aboutMe">
         <section class="section is-small">
             <h1 class="title is-size-1 is-size-3-mobile has-text-centered hide white">
@@ -442,14 +445,6 @@
                         </div>
                     </div>
                 </section>
-
-                <!-- RIGHT: IMAGE -->
-                <!-- <div class="column is-5">
-                    <figure class="image">
-                        <img src="./assets/images/jaimeinYellow3.jpeg" alt="Photo of Jaime">
-                    </figure>
-                </div> -->
-
             </div>
         </section>
     </section>
@@ -466,14 +461,8 @@
                     <span> <a href=" tel:+16149401099">614.940.1099</a></span> |
                     <span><a href="mailto:jaimemarsh19@gmail.com">jaimemarsh.web@gmail.com</a></span> |
                     <span><a href="https://www.linkedin.com/in/jaime-marsh/">Linkedin</a></span>
-                    <!-- <span> <a href="/resume.html">Resume</a></span> -->
                 </address>
-                <!-- <div>
-                    <div class="is-size-4">
-                        Made with
-                        <span> <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28"></span>
-                    </div>
-                </div> -->
+
             </div>
         </footer>
     </section>
@@ -484,166 +473,3 @@
 </body>
 
 </html>
-
-
-<!-- Website Layout: Rough Draft by Section
-Section 0 — Navbar (Persistent)
-
-Content:
-
-Logo / Name: Jaime Marsh (or .WEB)
-
-Nav links: About Me | Portfolio | Featured Work | Contact
-
-Behavior:
-
-Fixed or sticky at top
-
-Transparent background initially, becomes solid on scroll
-
-Hover styling (subtle, no white flashes)
-
-Purpose: Easy navigation, consistent branding
-
-Section 1 — Hero / Opening
-
-Content:
-
-Full-width background image (could be a subtle blurred bar photo or neutral textured image)
-
-Overlay for readability
-
-Large text: Your name (Jaime Marsh)
-
-Subtitle / tag line: Web Developer • Social Media & Marketing Manager (or something more personality-driven)
-
-Call to action button: View My Work → scrolls to portfolio
-
-Layout:
-
-Text aligned left or centered depending on vibe
-
-Optional: subtle animation on load (fade or slide-up)
-
-Purpose: Establishes identity, immediate impression
-
-
-Section 2 — About Me
-
-Content:
-
-Paragraph introducing yourself (personality + professional)
-
-Optional: a small photo of yourself on the side
-
-Layout:
-
-Split columns: photo left, text right
-
-Responsive: stacks on mobile
-
-Purpose: Humanize yourself, give context for your work
-
-
-Section 3 — Featured Work / Case Study
-
-Content:
-
-Big featured project (your bar)
-
-Hero image for project (best photo)
-
-Short paragraph describing what you did: web, social, photography, marketing
-
-Optional bullets: roles, responsibilities, tools used (Adobe, Canva, WordPress, etc.)
-
-Optional call to action / next project button
-
-Layout:
-
-Full-width section or left-image/right-text layout
-
-Highlight 1–3 of your best shots (can be carousel / horizontal scroll)
-
-Purpose: Show depth on one client, demonstrate problem-solving + creativity
-
-
-Section 4 — Portfolio Grid / Gallery
-
-Content:
-
-Multiple images from the bar:
-
-Website screenshots
-
-Social media posts
-
-Photography (interior, exterior, events)
-
-Optional text overlay or labels (Project Type: Photography / Web / Social)
-
-Layout:
-
-Bulma columns, 3–4 per row on desktop, 2 per row on tablet, 1 on mobile
-
-Hover zoom effect on images
-
-Optional: clickable modal/lightbox to view full images
-
-Purpose: Show breadth of work, visual proof of skill
-
-Section 5 — Optional Additional Projects / Concept Work
-
-Content:
-
-Small side projects, personal branding, or mock projects
-
-Layout:
-
-Similar grid or horizontal scroll
-
-Purpose: Show versatility and creativity outside the bar if desired
-
-Section 6 — Contact / Call to Action
-
-Content:
-
-Short paragraph encouraging contact
-
-Contact form: Name, Email, Message
-
-Links: Email, LinkedIn, possibly Instagram or other relevant work
-
-Layout:
-
-Centered, clear, simple
-
-Purpose: Makes it easy for clients or employers to reach you
-
-Section 7 — Footer
-
-Content:
-
-Name / copyright
-
-Links: privacy, social links
-
-Optional: mini nav
-
-Layout:
-
-Minimal, dark background with light text
-
-Purpose: Finishes the page professionally
-
-Extra UX / Design Notes
-
-Keep consistent spacing and font hierarchy across sections
-
-Use large images for impact, small images for detail
-
-Keep text concise — let visuals do the talking
-
-Responsive: hero image, galleries, columns all scale for mobile
-
-Optional: subtle animations (fade, slide, zoom) for interactivity -->
