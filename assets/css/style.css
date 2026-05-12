@@ -55,6 +55,7 @@ body {
     height: 520px;
     overflow: hidden;
     scroll-snap-align: center;
+    padding: 0%;
 }
 
 .websiteImage {
@@ -63,7 +64,7 @@ body {
 }
 
 .projectImage {
-    width: 375px;
+    width: 425px;
     height: 620px;
 }
 
@@ -156,7 +157,6 @@ body {
 /* Mobile optimization */
 @media screen and (max-width: 768px) {
     .background-image {
-        background-image: url('../images/jaime2.jpeg');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -172,6 +172,24 @@ body {
 
         padding-left: 1rem;
         padding-right: 1rem;
+    }
+
+    .featured-scroll,
+    .featured-scroll-opposite {
+        gap: 8px;
+        padding: 0 4px 12px 4px;
+    }
+
+    .featured-item {
+        width: 88vw;
+        /* fills more screen width */
+        height: auto;
+    }
+
+    .websiteImage,
+    .projectImage {
+        width: 88vw;
+        height: auto;
     }
 }
 
