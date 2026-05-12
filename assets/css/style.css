@@ -156,6 +156,10 @@ body {
 /* Mobile optimization */
 @media screen and (max-width: 768px) {
     .background-image {
+        background-image: url('../images/jaime2.jpeg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
         background-attachment: scroll;
 
         /* Makes the full image fit better */
